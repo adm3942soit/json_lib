@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="json_lib:main" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="com.json" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/../../build/classes/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../lib/json-lib-2.4-jdk15.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../lib/xom-1.2.10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../lib/commons-collections-3.2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.4.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.json:org.json:chargebee-1.0" level="project" />
+    <orderEntry type="library" name="Gradle: commons-io:commons-io:2.4" level="project" />
+    <orderEntry type="library" name="Gradle: commons-lang:commons-lang:2.6" level="project" />
+    <orderEntry type="library" name="Gradle: net.sf.ezmorph:ezmorph:1.0.6" level="project" />
+    <orderEntry type="library" name="Gradle: commons-beanutils:commons-beanutils:1.8.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.collections:google-collections:1.0-rc2" level="project" />
+    <orderEntry type="library" name="Gradle: org.projectlombok:lombok:1.14.8" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.4.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.4.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.4.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.4.2" level="project" />
+    <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.4.0" level="project" />
+  </component>
+</module>
