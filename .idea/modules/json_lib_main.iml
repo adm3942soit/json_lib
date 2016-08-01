@@ -42,8 +42,7 @@
     <orderEntry type="library" name="Gradle: commons-lang:commons-lang:2.6" level="project" />
     <orderEntry type="library" name="Gradle: net.sf.ezmorph:ezmorph:1.0.6" level="project" />
     <orderEntry type="library" name="Gradle: commons-beanutils:commons-beanutils:1.8.3" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.collections:google-collections:1.0-rc2" level="project" />
-    <orderEntry type="library" name="Gradle: org.projectlombok:lombok:1.14.8" level="project" />
+    <orderEntry type="library" name="Gradle: org.projectlombok:lombok:1.16.10" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.5" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.4.2" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.4.2" level="project" />

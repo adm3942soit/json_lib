@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.json.helper.JsonHelperTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-06-28T06:15:16" hostname="n741" time="0.393">
+<testsuite name="com.json.helper.JsonHelperTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-08-01T10:27:20" hostname="n741" time="0.429">
   <properties/>
-  <testcase name="checkXMLToJsonConverter" classname="com.json.helper.JsonHelperTest" time="0.262"/>
-  <testcase name="checkTransformingFromXML" classname="com.json.helper.JsonHelperTest" time="0.131"/>
+  <testcase name="checkXMLToJsonConverter" classname="com.json.helper.JsonHelperTest" time="0.275"/>
+  <testcase name="checkTransformingFromXML" classname="com.json.helper.JsonHelperTest" time="0.153"/>
   <system-out><![CDATA[true
 checkXMLToJconConverter sender: {"name":"Mitchell Slater"}
 checkXMLToJconConverter data: {"carName":"opel","cardColor":"red"}
@@ -19,9 +19,9 @@ sender {"name":"Mitchell Slater"}
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Jun 28, 2016 9:15:16 AM net.sf.json.xml.XMLSerializer getType
+Aug 01, 2016 1:27:20 PM net.sf.json.xml.XMLSerializer getType
 INFO: Using default type string
-Jun 28, 2016 9:15:16 AM net.sf.json.xml.XMLSerializer getType
+Aug 01, 2016 1:27:20 PM net.sf.json.xml.XMLSerializer getType
 INFO: Using default type string
 ]]></system-err>
 </testsuite>

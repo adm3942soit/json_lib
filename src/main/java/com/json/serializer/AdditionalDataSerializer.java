@@ -5,10 +5,10 @@ import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.SerializerProvider;
-import com.google.common.collect.Maps;
 import com.json.bean.DataBean;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -21,7 +21,7 @@ public class AdditionalDataSerializer extends JsonSerializer<DataBean> {
                           SerializerProvider provider) throws IOException,
             JsonProcessingException {
         if (value != null) {
-            Map<String, Map<String, String>> mapAdditionalData= Maps.newHashMap();
+            Map<String, Map<String, String>> mapAdditionalData= new HashMap();
             if (value.additionalData != null) {
                 mapAdditionalData.put("sender", value.additionalData.senderToJsonMap());
             }

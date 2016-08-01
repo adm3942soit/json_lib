@@ -12,7 +12,7 @@ def libs = [
         jsonLib:files("lib/json-lib-2.4-jdk15.jar", "lib/xom-1.2.10.jar",
                 "lib/commons-collections-3.2.1.jar"),
         // Compile
-        lombok: 'org.projectlombok:lombok:1.14.8',
+        lombok: 'org.projectlombok:lombok:1.16.10',
         jackson: 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.4.2',
         slf4j: 'org.slf4j:slf4j-api:1.7.5'
 ]
@@ -26,7 +26,7 @@ dependencies {
     compile group: 'commons-lang', name: 'commons-lang', version: '2.6'
     compile group: 'net.sf.ezmorph', name: 'ezmorph', version: '1.0.6'
     compile group: 'commons-beanutils', name: 'commons-beanutils', version: '1.8.3'
-    compile group: 'com.google.collections', name: 'google-collections', version: '1.0-rc2'
+   // compile group: 'com.google.collections', name: 'google-collections', version: '1.0-rc2'
     compile libs.lombok
     compile libs.slf4j
 
