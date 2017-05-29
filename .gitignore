@@ -1,5 +1,10 @@
 # Created by .ignore support plugin (hsz.mobi)
 .gitignore
+build/classes
 build/dependency-cache/
-build/tmp/compileJava/
-build/tmp/compileTestJava/
+build/tmp
+build/reports
+build/test-results
+.idea
+.gradle
+gradle
