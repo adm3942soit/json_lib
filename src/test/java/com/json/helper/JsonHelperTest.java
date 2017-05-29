@@ -29,8 +29,8 @@ public class JsonHelperTest {
         }
 
     }
-    @Test
-    @Order(order = 0)
+//    @Test
+//    @Order(order = 0)
     public void checkXMLToJsonConverter() {
         System.out.println(JsonHelper.isJson(jsonStr));
         String path = resources + File.separator + "data.xml";

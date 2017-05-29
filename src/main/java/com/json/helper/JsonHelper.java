@@ -89,6 +89,7 @@ public class JsonHelper {
             ObjectMapper objectMapper = new ObjectMapper();
             StringWriter stringWriter = new StringWriter();
             JSONObject jsonArray = new JSONObject(jsonString);
+            if(!jsonArray.has(key)) return "";
             if ((jsonArray.get(key)) instanceof JSONArray) {
                 JSONArray array = (JSONArray) jsonArray.get(key);
                 for (int i = 0; i < array.length(); i++) {
@@ -108,6 +109,43 @@ public class JsonHelper {
             ex.printStackTrace();
         }
         return resultValue;
+    }
+    public static String getValueByKey(String jsonStr, String key){
+        try {
+            JSONObject jsonObj = new JSONObject(jsonStr);
+            Iterator iterator = jsonObj.keys();
+            while (iterator.hasNext()) {
+                String keyGet = (String) iterator.next();
+                if (keyGet.equals(key)) {
+                    return (String) jsonObj.get((String) keyGet);
+                }
+            }
+        }catch(JSONException ex){
+            ex.printStackTrace();
+            return null;
+        }
+        return null;
+    }
+    public static Object getObjectValueByKey(String jsonStr, String key){
+        try {
+            JSONObject jsonObj = new JSONObject(jsonStr);
+            Iterator iterator = jsonObj.keys();
+            while (iterator.hasNext()) {
+                String keyGet = (String) iterator.next();
+                if (keyGet.equals(key)) {
+                    if(jsonObj.get((String) keyGet) instanceof JSONArray){
+                        JSONArray array = (JSONArray) jsonObj.get((String) keyGet);
+                        return array;
+
+                    }
+                    return jsonObj.get((String) keyGet);
+                }
+            }
+        }catch(JSONException ex){
+            ex.printStackTrace();
+            return null;
+        }
+        return null;
     }
 
     /*

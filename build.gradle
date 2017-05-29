@@ -1,5 +1,5 @@
 group 'com.json'
-version '1.0-SNAPSHOT'
+version '1.0.0'
 
 apply plugin: 'java'
 
@@ -9,23 +9,24 @@ repositories {
     mavenCentral()
 }
 def libs = [
-        jsonLib:files("lib/json-lib-2.4-jdk15.jar", "lib/xom-1.2.10.jar",
-                "lib/commons-collections-3.2.1.jar"),
+//        jsonLib:files("lib/json-lib-2.4-jdk15.jar", "lib/xom-1.2.10.jar",
+//                "lib/commons-collections-3.2.1.jar"),
         // Compile
         lombok: 'org.projectlombok:lombok:1.16.10',
         jackson: 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.4.2',
+        all:fileTree(dir: 'lib', include: '*.jar'),
         slf4j: 'org.slf4j:slf4j-api:1.7.5'
 ]
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
-    compile libs.jsonLib
+    compile libs.all
     compile libs.jackson
-    compile group: 'org.json', name: 'org.json', version: 'chargebee-1.0'
-    compile group: 'commons-io', name: 'commons-io', version: '2.4'
-    compile group: 'commons-lang', name: 'commons-lang', version: '2.6'
-    compile group: 'net.sf.ezmorph', name: 'ezmorph', version: '1.0.6'
-    compile group: 'commons-beanutils', name: 'commons-beanutils', version: '1.8.3'
+//    compile group: 'org.json', name: 'org.json', version: 'chargebee-1.0'
+//    compile group: 'commons-io', name: 'commons-io', version: '2.4'
+//    compile group: 'commons-lang', name: 'commons-lang', version: '2.6'
+//    compile group: 'net.sf.ezmorph', name: 'ezmorph', version: '1.0.6'
+//    compile group: 'commons-beanutils', name: 'commons-beanutils', version: '1.8.3'
    // compile group: 'com.google.collections', name: 'google-collections', version: '1.0-rc2'
     compile libs.lombok
     compile libs.slf4j
